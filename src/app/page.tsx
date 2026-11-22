@@ -14,12 +14,17 @@ const RECEBE = [
   "O que precisa constar no contrato",
   "Perguntas prontas para fazer ao empreiteiro",
   "Os pontos positivos do orçamento e o próximo passo",
+  "Se quiser ir além, a opção de conversar com um arquiteto da nossa equipe sobre o seu orçamento",
 ];
 
 const FAQ = [
   {
     p: "Substitui um arquiteto ou engenheiro?",
     r: "Não. A análise é automática e orientativa: ela aponta o que falta, o que está estranho e o que perguntar, mas não substitui vistoria na obra nem parecer de arquiteto ou engenheiro habilitado. Quando o parecer encontra um risco técnico, ele recomenda procurar um profissional.",
+  },
+  {
+    p: "E se eu quiser a ajuda de um arquiteto depois?",
+    r: "No fim de cada parecer você encontra um botão para conversar com um arquiteto da nossa equipe pelo WhatsApp. Na consultoria vocês repassam o orçamento juntos e você entende o que pedir ao empreiteiro. A consultoria é opcional e combinada à parte.",
   },
   {
     p: "Meus dados ficam seguros?",

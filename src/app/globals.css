@@ -162,6 +162,16 @@ ul.ok { margin: 8px 0 0; padding-left: 20px; } ul.ok li { padding: 3px 0; }
 .acts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
 .fine { font-size: 13px; color: var(--mute); margin-top: 18px; max-width: 75ch; }
 
+/* Convite para consultoria */
+.consultoria {
+  margin-top: 26px; padding: 20px; border-radius: 12px; border: 2px solid var(--blue2);
+  background: light-dark(#eef3fc, #12244f);
+}
+.consultoria h3 { font-size: 24px; margin-bottom: 6px; border: 0; padding: 0; }
+.consultoria p { margin: 0 0 14px; }
+.consultoria .beneficio { font-weight: 600; }
+.consultoria .btn { text-align: center; padding-block: 10px; }
+
 /* ---------- Formulário ---------- */
 .pagina-form { max-width: 620px; margin: -56px auto 0; padding: 0 max(4vw, 16px) 64px; position: relative; }
 .form h2 { font-size: 26px; margin: 26px 0 4px; }

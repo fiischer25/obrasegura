@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
+import { headers } from "next/headers";
 import { PaginaSimples } from "@/components/Moldura";
 import { ParecerView } from "@/components/ParecerView";
 import { AcoesParecer } from "@/components/AcoesParecer";
+import { Consultoria } from "@/components/Consultoria";
 import { ParecerSchema } from "@/lib/parecer";
 import { db } from "@/lib/supabase";
 import { tokenValido } from "@/lib/seguranca";
@@ -25,9 +27,21 @@ export default async function ParecerPage({ params }: PageProps<"/parecer/[token
   // Custo por m² só faz sentido em obra nova/ampliação com faixa de referência
   const area = data.tipo_obra === "reforma" ? undefined : Number(data.area_m2) || undefined;
 
+  const base = process.env.SITE_URL ?? `https://${(await headers()).get("host")}`;
+  const linkParecer = `${base}/parecer/${token}`;
+
   return (
     <PaginaSimples cta={false}>
-      <ParecerView r={v.data} areaM2={area} acoes={<AcoesParecer r={v.data} />} />
+      <ParecerView
+        r={v.data}
+        areaM2={area}
+        acoes={
+          <>
+            <AcoesParecer r={v.data} />
+            <Consultoria linkParecer={linkParecer} />
+          </>
+        }
+      />
     </PaginaSimples>
   );
 }
