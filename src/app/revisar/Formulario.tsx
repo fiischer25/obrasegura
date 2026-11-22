@@ -218,10 +218,11 @@ export function Formulario({ planoInicial, modoTeste }: { planoInicial: Plano; m
       <p className="hint">Sem cadastro e sem senha. Usamos só para enviar o parecer.</p>
       <label htmlFor="nome">Nome</label>
       <input id="nome" name="nome" type="text" required autoComplete="name" />
-      <label htmlFor="email">E-mail (o parecer chega aqui)</label>
+      <label htmlFor="email">Seu e-mail (o parecer chega aqui)</label>
       <input id="email" name="email" type="email" required autoComplete="email" inputMode="email" />
-      <label htmlFor="whatsapp">WhatsApp (opcional)</label>
-      <input id="whatsapp" name="whatsapp" type="tel" autoComplete="tel" inputMode="tel" placeholder="(11) 99999-9999" />
+      <label htmlFor="whatsapp">Seu número de WhatsApp (opcional)</label>
+      <input id="whatsapp" name="whatsapp" type="tel" autoComplete="tel" inputMode="tel" placeholder="(11) 99999-9999" aria-describedby="dica-whats" />
+      <p className="hint" id="dica-whats">Só para falarmos com você se houver algum problema com o pedido.</p>
 
       {plano === "teste" ? (
         <div className="teste">
