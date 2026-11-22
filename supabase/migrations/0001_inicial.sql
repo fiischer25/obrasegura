@@ -79,6 +79,8 @@ alter table public.pedidos enable row level security;
 alter table public.codigos_credito enable row level security;
 revoke all on public.pedidos from anon, authenticated;
 revoke all on public.codigos_credito from anon, authenticated;
+grant all on public.pedidos, public.codigos_credito to service_role;
+grant usage, select on all sequences in schema public to service_role;
 
 -- Bucket PRIVADO para os arquivos dos orçamentos (até 10 MB, só PDF e imagens)
 insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
