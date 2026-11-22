@@ -215,6 +215,7 @@ export function Formulario({ planoInicial, modoTeste }: { planoInicial: Plano; m
       <textarea id="texto" name="texto" maxLength={LIMITES.maxCaracteresTexto} placeholder="Cole aqui o texto, se o orçamento veio por WhatsApp ou e-mail." />
 
       <h2>Seus dados</h2>
+      <p className="hint">Sem cadastro e sem senha. Usamos só para enviar o parecer.</p>
       <label htmlFor="nome">Nome</label>
       <input id="nome" name="nome" type="text" required autoComplete="name" />
       <label htmlFor="email">E-mail (o parecer chega aqui)</label>
@@ -264,7 +265,7 @@ export function Formulario({ planoInicial, modoTeste }: { planoInicial: Plano; m
         <span>
           Li e aceito os <Link href="/termos" target="_blank">termos de uso</Link> e a{" "}
           <Link href="/privacidade" target="_blank">política de privacidade</Link>. Entendo que a análise é automática e
-          orientativa e não substitui um arquiteto ou engenheiro.
+          serve para me orientar, sem fazer o papel de uma vistoria técnica na obra.
         </span>
       </label>
 

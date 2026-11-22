@@ -19,8 +19,12 @@ const RECEBE = [
 
 const FAQ = [
   {
-    p: "Substitui um arquiteto ou engenheiro?",
-    r: "Não. A análise é automática e orientativa: ela aponta o que falta, o que está estranho e o que perguntar, mas não substitui vistoria na obra nem parecer de arquiteto ou engenheiro habilitado. Quando o parecer encontra um risco técnico, ele recomenda procurar um profissional.",
+    p: "Preciso me cadastrar ou entender de obra?",
+    r: "Não. Qualquer pessoa pode usar, sem cadastro e sem senha. Você preenche o básico da obra, envia o orçamento e informa seu e-mail. O link do parecer aparece na tela e chega no seu e-mail, e você pode abrir quando quiser durante 90 dias. O parecer é escrito para quem não é da área.",
+  },
+  {
+    p: "A análise substitui um arquiteto ou engenheiro?",
+    r: "Não. Ela é feita para você, dono da obra, e serve para orientar: aponta o que falta, o que está estranho e o que perguntar ao empreiteiro. Mas é automática, e não faz o papel de uma vistoria na obra nem de um parecer técnico assinado por arquiteto ou engenheiro. Quando o parecer encontra um risco técnico, ele recomenda procurar um profissional.",
   },
   {
     p: "E se eu quiser a ajuda de um arquiteto depois?",
@@ -50,6 +54,7 @@ export default function Home() {
       <header className="hero">
         <Topo />
         <div className="wrap hero-in">
+          <p className="eyebrow">Para quem vai construir ou reformar, sem precisar entender de obra</p>
           <h1>Antes de assinar, revise o orçamento do empreiteiro</h1>
           <p className="sub">
             Envie o PDF, a foto ou o texto do orçamento da sua obra. Em poucos minutos você descobre o que está
@@ -64,6 +69,7 @@ export default function Home() {
               <b>{reais(PRECOS.avulsa.centavos)}</b> por análise
             </span>
           </div>
+          <p className="sem-cadastro">Sem cadastro e sem senha: você só precisa do orçamento e de um e-mail.</p>
         </div>
       </header>
 
@@ -89,7 +95,7 @@ export default function Home() {
               <li className="card">
                 <div className="num">1</div>
                 <h3>Envie</h3>
-                <p>Conte o básico da obra e mande o orçamento: PDF, fotos ou texto colado. Leva dois minutos no celular.</p>
+                <p>Sem cadastro: conte o básico da obra e mande o orçamento em PDF, foto ou texto. Leva dois minutos no celular.</p>
               </li>
               <li className="card">
                 <div className="num">2</div>
@@ -111,7 +117,7 @@ export default function Home() {
               <h2 id="recebe" className="sec-title">
                 O que você recebe
               </h2>
-              <p className="sec-lead">Um parecer escrito em português simples, sem jargão, pensado para quem não é da área.</p>
+              <p className="sec-lead">Um parecer escrito em português simples, sem jargão, feito para o dono da obra, não para técnicos.</p>
             </div>
             <ul className="lista-check">
               {RECEBE.map((x) => (
@@ -126,7 +132,7 @@ export default function Home() {
             <h2 id="quem" className="sec-title">
               Para quem é
             </h2>
-            <p className="sec-lead">Para quem vai contratar um empreiteiro e não tem um arquiteto acompanhando a obra.</p>
+            <p className="sec-lead">Para o dono da obra: quem vai contratar um empreiteiro e quer saber se o orçamento está completo e justo, mesmo sem entender nada de construção.</p>
             <div className="grid2 publico">
               <div className="card">
                 <h3>Construção nova</h3>

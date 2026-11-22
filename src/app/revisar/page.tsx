@@ -16,7 +16,7 @@ export default async function Revisar({ searchParams }: PageProps<"/revisar">) {
         <Topo cta={false} />
         <div className="wrap hero-in" style={{ paddingBottom: 88 }}>
           <h1>Revise o orçamento da sua obra</h1>
-          <p className="sub">Preencha em dois minutos. O parecer fica pronto poucos minutos depois do pagamento.</p>
+          <p className="sub">Não precisa de cadastro. Preencha em dois minutos e o parecer fica pronto poucos minutos depois do pagamento.</p>
         </div>
       </header>
       <main className="pagina-form">

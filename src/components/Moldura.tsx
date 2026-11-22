@@ -36,8 +36,8 @@ export function Rodape() {
           </nav>
         </div>
         <p className="aviso-legal">
-          A análise é automática e orientativa. Não substitui vistoria nem parecer de arquiteto ou engenheiro
-          habilitado.
+          Feito para o dono da obra. A análise é automática e orientativa: não substitui vistoria nem parecer
+          técnico de arquiteto ou engenheiro habilitado.
         </p>
       </div>
     </footer>

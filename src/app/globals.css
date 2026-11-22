@@ -59,6 +59,8 @@ a { color: var(--blue2); }
 .marca b { font-family: var(--font-barlow-condensed), sans-serif; font-size: 22px; letter-spacing: .01em; margin-right: 6px; }
 .hero-in { padding-top: clamp(28px, 6vw, 72px); padding-bottom: clamp(48px, 8vw, 96px); }
 .hero h1 { font-size: clamp(36px, 6vw, 64px); max-width: 17ch; }
+.eyebrow { font-weight: 600; font-size: 16px; margin: 0 0 12px; color: #ffd9d6; }
+.sem-cadastro { margin: 16px 0 0; font-size: 16px; opacity: .92; }
 .hero .sub { font-size: clamp(17px, 2vw, 20px); max-width: 58ch; margin: 18px 0 0; opacity: .92; }
 .hero .cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; margin-top: 28px; }
 .preco-tag { font-size: 16px; opacity: .9; }
